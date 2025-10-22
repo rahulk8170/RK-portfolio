@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Krishnan | Visual Creator Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1c1917', // Stone 900 (Deep Charcoal)
+                        'secondary-gold': '#facc15', // Amber 400 (Highlight Color)
+                        'background-light': '#f5f5f4', // Stone 100
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Load Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        /* Custom styling for subtle effects */
+        .shadow-gold {
+            box-shadow: 0 4px 6px -1px rgba(250, 202, 21, 0.1), 0 2px 4px -2px rgba(250, 202, 21, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-background-light text-primary-dark antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-primary-dark shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold tracking-tight text-secondary-gold">
+                R.K.
+            </h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-white hover:text-secondary-gold transition duration-300">About</a>
+                <a href="#expertise" class="text-white hover:text-secondary-gold transition duration-300">Expertise</a>
+                <a href="#work" class="text-white hover:text-secondary-gold transition duration-300">Work</a>
+                <a href="#contact" class="text-white hover:text-secondary-gold transition duration-300">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden sm:block px-4 py-2 bg-secondary-gold text-primary-dark text-sm font-semibold rounded-lg hover:opacity-90 transition duration-300 shadow-lg">
+                HIRE ME
+            </a>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="about" class="pt-16 pb-20 md:pt-24 md:pb-32 bg-primary-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Text Content -->
+                <div class="text-left">
+                    <p class="text-sm font-medium uppercase tracking-widest text-secondary-gold mb-3">
+                        Rahul Krishnan | Dubai, UAE
+                    </p>
+                    <h2 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                        Visual Creator. <br> Storyteller.
+                    </h2>
+                    <p class="text-xl text-gray-300 max-w-lg mb-8">
+                        I am a multimedia specialist based in Dubai, specializing in both **fashion and street photography** and dedicated to turning raw moments into compelling, timeless visuals.
+                    </p>
+                    <a href="#expertise" class="inline-block px-8 py-3 bg-secondary-gold text-primary-dark text-lg font-bold rounded-lg hover:bg-opacity-90 transition duration-300 shadow-2xl">
+                        EXPLORE PORTFOLIO
+                    </a>
+                </div>
+
+                <!-- Image Placeholder (using a monochrome style as suggested by the PDF) -->
+                <div class="flex justify-center md:justify-end">
+                    <div class="w-full max-w-md h-96 bg-gray-700 rounded-xl overflow-hidden shadow-2xl relative border-4 border-secondary-gold">
+                        <!-- Placeholder for professional portrait -->
+                        <img 
+                            src="https://placehold.co/400x400/374151/FFFFFF?text=Professional%0APortrait" 
+                            alt="Professional Portrait of Rahul Krishnan" 
+                            class="object-cover w-full h-full grayscale hover:grayscale-0 transition duration-500"
+                            onerror="this.src='https://placehold.co/400x400/374151/FFFFFF?text=Professional%0APortrait';"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary-dark/50 to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" class="py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-4xl font-extrabold text-center mb-16 text-primary-dark">
+                    My Creative Expertise
+                </h3>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Skill Card 1: Photography -->
+                    <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-secondary-gold hover:shadow-primary-dark/10 transition duration-500">
+                        <div class="text-4xl text-secondary-gold mb-4">📸</div>
+                        <h4 class="text-2xl font-bold mb-3">Photography & Cinematography</h4>
+                        <p class="text-gray-600">
+                            Specializing in **Fashion, Street, Product, Event, and Portrait** photography. My work blends artistic vision with technical precision to capture raw emotion and elegant movement.
+                        </p>
+                        <ul class="mt-4 text-sm text-gray-500 list-disc list-inside">
+                            <li>Fashion & Model Photography</li>
+                            <li>Urban & Street Snapshots</li>
+                            <li>Studio & Product Visuals</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 2: Videography & Editing -->
+                    <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-secondary-gold hover:shadow-primary-dark/10 transition duration-500">
+                        <div class="text-4xl text-secondary-gold mb-4">🎥</div>
+                        <h4 class="text-2xl font-bold mb-3">Videography & Video Editing</h4>
+                        <p class="text-gray-600">
+                            From concept to final delivery—I handle scripting, storyboarding, clean cinematography, and dynamic editing for short films and high-impact corporate videos.
+                        </p>
+                        <ul class="mt-4 text-sm text-gray-500 list-disc list-inside">
+                            <li>Creative Short Films</li>
+                            <li>Corporate & Brand Videos</li>
+                            <li>Social Media Reels/Teasers</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 3: Graphic Design -->
+                    <div class="bg-white p-8 rounded-xl shadow-2xl border-t-4 border-secondary-gold hover:shadow-primary-dark/10 transition duration-500">
+                        <div class="text-4xl text-secondary-gold mb-4">🎨</div>
+                        <h4 class="text-2xl font-bold mb-3">Graphic Design & Branding</h4>
+                        <p class="text-gray-600">
+                            Creating compelling brand identities, social media content, and marketing materials with a focus on color scheme planning, typography, and visual concept creation.
+                        </p>
+                        <ul class="mt-4 text-sm text-gray-500 list-disc list-inside">
+                            <li>Brand Identity Design</li>
+                            <li>Social Media Campaign Graphics</li>
+                            <li>Typography & Layout</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Showcase Section -->
+        <section id="work" class="bg-primary-dark py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-4xl font-extrabold text-center text-white mb-6">
+                    Selected Work & Projects
+                </h3>
+                <p class="text-center text-gray-400 mb-16 max-w-3xl mx-auto">
+                    A glimpse into the diverse visual stories I've crafted, covering fashion, street, and commercial content.
+                </p>
+
+                <!-- Responsive Image Grid (Using placeholders based on PDF examples) -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                    
+                    <div class="aspect-video relative rounded-lg overflow-hidden group shadow-xl">
+                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=FASHION+SHOT" alt="Fashion Photography Example" class="w-full h-full object-cover transform transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-primary-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                            <span class="text-white text-lg font-bold">Fashion Editorial</span>
+                        </div>
+                    </div>
+
+                    <div class="aspect-square relative rounded-lg overflow-hidden group shadow-xl">
+                        <img src="https://placehold.co/400x400/10b981/ffffff?text=STREET+SNAP" alt="Street Photography Example" class="w-full h-full object-cover transform transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-primary-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                            <span class="text-white text-lg font-bold">Street Photography</span>
+                        </div>
+                    </div>
+                    
+                    <div class="aspect-video relative rounded-lg overflow-hidden group shadow-xl">
+                        <img src="https://placehold.co/600x400/ef4444/ffffff?text=BRANDING+MOCKUP" alt="Branding Project Example" class="w-full h-full object-cover transform transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-primary-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                            <span class="text-white text-lg font-bold">Graphic Design</span>
+                        </div>
+                    </div>
+                    
+                    <div class="aspect-square relative rounded-lg overflow-hidden group shadow-xl">
+                        <img src="https://placehold.co/400x400/f59e0b/ffffff?text=REEL+PREVIEW" alt="Video Reel Preview" class="w-full h-full object-cover transform transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-primary-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                            <span class="text-white text-lg font-bold">Video Editing</span>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="aspect-square relative rounded-lg overflow-hidden group shadow-xl hidden sm:block">
+                        <img src="https://placehold.co/400x400/9333ea/ffffff?text=PORTRAIT" alt="Portrait Photography Example" class="w-full h-full object-cover transform transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-primary-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                            <span class="text-white text-lg font-bold">Portraiture</span>
+                        </div>
+                    </div>
+                    <div class="aspect-video relative rounded-lg overflow-hidden group shadow-xl hidden sm:block">
+                        <img src="https://placehold.co/600x400/84cc16/ffffff?text=PRODUCT+VISUAL" alt="Product Photography Example" class="w-full h-full object-cover transform transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-primary-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                            <span class="text-white text-lg font-bold">Product Visuals</span>
+                        </div>
+                    </div>
+                    <div class="aspect-square relative rounded-lg overflow-hidden group shadow-xl hidden lg:block">
+                        <img src="https://placehold.co/400x400/06b6d4/ffffff?text=EVENT+CAPTURE" alt="Event Photography Example" class="w-full h-full object-cover transform transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-primary-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                            <span class="text-white text-lg font-bold">Event Coverage</span>
+                        </div>
+                    </div>
+                    <div class="aspect-video relative rounded-lg overflow-hidden group shadow-xl hidden lg:block">
+                        <img src="https://placehold.co/600x400/ec4899/ffffff?text=SOCIAL+ADS" alt="Social Media Ad Graphic" class="w-full h-full object-cover transform transition duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-primary-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                            <span class="text-white text-lg font-bold">Social Graphics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Link to main portfolio -->
+                <div class="text-center mt-12">
+                    <a href="https://www.behance.net/rahulkrishnan1" target="_blank" class="inline-flex items-center space-x-2 px-6 py-3 border border-secondary-gold text-secondary-gold text-lg font-semibold rounded-lg hover:bg-secondary-gold hover:text-primary-dark transition duration-300">
+                        <span>View Full Behance Portfolio &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client/Brand Identity Section -->
+        <section class="py-20 md:py-24 bg-background-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-2xl font-bold text-center text-primary-dark mb-10">
+                    Brands & Identities Crafted By Me
+                </h3>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6 items-center justify-center opacity-60">
+                    <!-- Using text placeholders for logos -->
+                    <div class="text-center font-extrabold text-xl text-primary-dark hover:opacity-100 transition duration-300">OXFORD</div>
+                    <div class="text-center font-extrabold text-xl text-green-700 hover:opacity-100 transition duration-300">RK ORGANIC</div>
+                    <div class="text-center font-extrabold text-xl text-yellow-500 hover:opacity-100 transition duration-300">LUSH LOOKS</div>
+                    <div class="text-center font-extrabold text-xl text-blue-700 hover:opacity-100 transition duration-300">FAST GLOBAL</div>
+                    <div class="text-center font-extrabold text-xl text-red-600 hover:opacity-100 transition duration-300">AAVENS</div>
+                    <div class="text-center font-extrabold text-xl text-purple-600 hover:opacity-100 transition duration-300">triobi</div>
+                </div>
+                <div class="text-center mt-6">
+                    <p class="text-sm text-gray-500 italic">...and many more in Real Estate, Business Services, & Retail.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-32 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-4xl font-extrabold text-primary-dark mb-4">
+                    Let's Create Something Visual
+                </h3>
+                <p class="text-xl text-gray-600 mb-12">
+                    Ready to turn your idea into a compelling visual experience? Get in touch for collaboration or a quick consultation on your next project.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
+                    
+                    <div class="p-6 bg-white rounded-xl shadow-lg border border-gray-200">
+                        <p class="text-sm font-semibold uppercase text-gray-500">Email</p>
+                        <a href="mailto:rahulkrishnan000@gmail.com" class="text-xl font-bold text-primary-dark hover:text-secondary-gold transition duration-300">
+                            rahulkrishnan000@gmail.com
+                        </a>
+                    </div>
+                    
+                    <div class="p-6 bg-white rounded-xl shadow-lg border border-gray-200">
+                        <p class="text-sm font-semibold uppercase text-gray-500">Phone</p>
+                        <a href="tel:+971522745798" class="text-xl font-bold text-primary-dark hover:text-secondary-gold transition duration-300">
+                            +971 52 274 5798
+                        </a>
+                    </div>
+                </div>
+                
+                <p class="mt-8 text-lg text-gray-700">Location: <span class="font-semibold">Dubai, UAE</span></p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-gray-400">
+            <p class="text-sm">© 2025 Rahul Krishnan. All Rights Reserved.</p>
+            <div class="flex space-x-6">
+                <!-- Social Links -->
+                <a href="https://www.behance.net/rahulkrishnan1" target="_blank" class="hover:text-secondary-gold transition duration-300">Behance</a>
+                <!-- You can add more links here (LinkedIn, Instagram, etc.) -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
